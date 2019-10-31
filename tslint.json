@@ -1,0 +1,27 @@
+{
+  "extends": ["tslint:recommended", "tslint-config-prettier"],
+  "linterOptions": {
+    "exclude": ["config/**/*.js", "node_modules/**/*.ts"]
+  },
+  "rules": {
+    "member-access": [true, "no-public"],
+    "ordered-imports": false,
+    "interface-over-type-literal": false,
+    "object-literal-sort-keys": false,
+    "no-console": false,
+    "jsx-no-lambda": false,
+    "object-literal-shorthand": false,
+    "variable-name": false,
+    "no-namespace": false,
+    "interface-name": false,
+    "ban-types": false,
+    "array-type": false,
+    "no-empty-interface": false,
+    "no-string-literal": false,
+    "no-require-imports": false,
+    "no-var-requires": false,
+    "max-classes-per-file": false,
+    "class-name": false,
+    "forin": false
+  }
+}

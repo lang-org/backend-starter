@@ -1,0 +1,5 @@
+{
+  "watch": ["dist"],
+  "exec": "concurrently --kill-others \"node ./dist/index.js\" \"node ./dist/worker.js\"",
+  "delay": "1500"
+}

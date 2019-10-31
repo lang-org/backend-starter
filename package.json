@@ -1,0 +1,44 @@
+{
+  "name": "lang-backend-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "tsc-watch --onSuccess \"nodemon\"",
+    "start": "node dist/index.js",
+    "format": "prettier --write \"src/**/*.ts\" \"src/**/*.js\"",
+    "test": "jest --forceExit"
+  },
+  "_moduleAliases": {
+    "@api": "dist/api",
+    "@utils": "dist/utils",
+    "@types": "dist/types",
+    "@generated": "dist/generated"
+  },
+  "dependencies": {
+    "@sentry/node": "5.4.0",
+    "apollo-server-express": "^2.9.7",
+    "dotenv": "^6.2.0",
+    "express": "^4.17.1",
+    "graphql": "^14.5.8",
+    "jest": "^24.1.0",
+    "lodash": "^4.17.11",
+    "module-alias": "^2.2.2",
+    "throng": "^4.0.0",
+    "winston": "^3.2.1"
+  },
+  "devDependencies": {
+    "@types/dotenv": "^6.1.1",
+    "@types/jest": "^24.0.11",
+    "@types/lodash": "^4.14.134",
+    "@types/throng": "^4.0.2",
+    "@types/uuid": "^3.4.4",
+    "concurrently": "^5.0.0",
+    "nodemon": "^1.19.4",
+    "prettier": "^1.16.3",
+    "source-map-support": "^0.5.12",
+    "tsc-watch": "^2.2.1",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^3.5.3"
+  }
+}
